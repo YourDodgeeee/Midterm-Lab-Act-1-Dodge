@@ -1,0 +1,145 @@
+:root {
+  --font-body: system-ui, sans-serif;
+  --font-heading: Georgia, serif;
+  --color-bg: #f9fafb;
+  --color-primary: #1e3a8a;
+  --color-secondary: #2563eb;
+  --color-text: #111827;
+  --color-muted: #6b7280;
+  --radius: 12px;
+  --shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-secondary);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 10px;
+}
+
+
+header {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:focus, nav a:hover {
+  text-decoration: underline;
+}
+
+
+#about {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center; 
+}
+.about-container img {
+  width: 180px;
+  height: 180px; 
+  object-fit: cover; 
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  flex-shrink: 0;
+}
+
+.about-container p {
+  flex: 1;
+  margin: 0;
+  min-width: 250px;
+}
+
+
+#projects {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+.projects-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.project-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.project-card h3 {
+  margin-top: 0;
+}
+.project-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--color-secondary);
+  font-weight: bold;
+  text-decoration: none;
+}
+.project-card a:hover, .project-card a:focus {
+  text-decoration: underline;
+}
+
+
+footer {
+  text-align: left;
+  padding: 3rem;
+  background: #e5e7eb;
+  color: var(--color-muted);
+}
+footer a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+footer a:hover, footer a:focus {
+  text-decoration: underline;
+}
