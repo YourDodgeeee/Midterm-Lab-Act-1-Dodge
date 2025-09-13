@@ -21,4 +21,5 @@ The purpose of this project is to practice HTML and CSS fundamentals, and to lea
 - Ensured text contrast is readable.  
 
 ## Live Site
-If published with GitHub Pages: [View Portfolio](https://your-username.github.io/portfolio-project/](https://github.com/YourDodgeeee/Midterm-Lab-Act-1-Dodge)
+If published with GitHub Pages: [View Portfolio](https://github.com/YourDodgeeee/Midterm-Lab-Act-1-Dodge)
+
